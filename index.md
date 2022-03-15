@@ -1,9 +1,8 @@
 # **Meme**
 ![my_meme](https://user-images.githubusercontent.com/101619086/158372873-0fbe9937-a68d-4d32-9018-1fb43480ecb5.png)
 
-library(magick)
 
-# Meme Code
+## Meme Code
 #Meme Text (first column of squares)
 first_text <-image_blank(width = 500,
                       height = 500,
@@ -55,7 +54,7 @@ third_brain <- image_read("https://mat3e.github.io/brains/img/2.jpg") %>%
 fourth_brain <- image_read("https://mat3e.github.io/brains/img/3.jpg") %>%
   image_scale(500)
 
-
+#Combining it all together
 first_vector <-c(first_text, first_brain)
 first_row <-image_append(first_vector)
 
@@ -70,7 +69,8 @@ fourth_row <-image_append(fourth_vector)
 
 c(first_row, second_row, third_row, fourth_row) %>%
   image_append(stack = TRUE)
-  
+ 
+ 
 # **Meme Information**  
 I was initially blank about what the meme should say, I just knew I wanted it to be the expanding brain meme.
 My motovation for what the meme would be about was the fact it took me hours to figure out the code for such a simple meme. (little errors I couldnt see increased the time)

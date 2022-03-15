@@ -3,7 +3,7 @@
 
 
 ## Meme Code
-#Meme Text (first column of squares)
+#### Meme Text (first column of squares)
 first_text <-image_blank(width = 500,
                       height = 500,
                       color = "#FFFFFF") %>%
@@ -41,7 +41,7 @@ fourth_text <-image_blank(width = 500,
                  gravity = "center")
 
 
-#Meme images (second column of squares)
+#### Meme images (second column of squares)
 first_brain <- image_read("https://mat3e.github.io/brains/img/0.jpg") %>%
   image_scale(500)
   
@@ -54,7 +54,7 @@ third_brain <- image_read("https://mat3e.github.io/brains/img/2.jpg") %>%
 fourth_brain <- image_read("https://mat3e.github.io/brains/img/3.jpg") %>%
   image_scale(500)
 
-#Combining it all together
+#### Combining it all together
 first_vector <-c(first_text, first_brain)
 first_row <-image_append(first_vector)
 
